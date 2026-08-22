@@ -1,0 +1,34 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int A,B,C;
+    cin >> A >> B >> C;
+    int num = -1;
+    bool found = false;
+
+    for(int i = A; i <= B; i++)
+    {
+        if(i % C == 0)
+        {
+            num = i;
+            found = true;
+            break;
+        }
+    }
+    if(found)
+    {
+        cout << num << '\n';
+    }
+    else
+    {
+        cout << num << '\n';
+    }
+
+
+    return 0;
+}
